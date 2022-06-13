@@ -12,8 +12,8 @@ console.log(2 + 2 * 2 > 4);
 
 const isCheck = true,
     isClose = false;
-console.log(isCheck && isClose); // && - правдивы оба
+console.log(isCheck && isClose); // && - оператор И - правдивы оба. Возвращает первый ложный или последний истинный аргумент
 
- const isChecked = true,
+ const isChecked = true,    // Сначала выполняется И, потом ИЛИ 
      isClosed = false;
- console.log(isChecked || isClosed); // || - правдив хотя бы один, ! - отрицание
+ console.log(isChecked || isClosed); // || - оператор ИЛИ - правдив хотя бы один, ! - отрицание. Возвращает первое правдивое или последнее ложное
