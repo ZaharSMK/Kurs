@@ -15,7 +15,7 @@ if (num < 49) {
     console.log('Нормально!' );
 }
 
-(num === 50) ? console.log('Ok!') : console.log('Error!');
+(num === 50) ? console.log('Ok!') : console.log('Error!'); // тернарный оператор. Условие ? если да : если нет
 
 
 switch (num) {
