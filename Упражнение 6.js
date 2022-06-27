@@ -12,6 +12,8 @@ function returnNeighboringNumbers(num) {
     mas[1] = num;
     mas[2] = num + 1;
     return mas;
+
+    // return [num - 1, num, num + 1]
 }
 
 console.log(returnNeighboringNumbers(6));
@@ -20,7 +22,7 @@ console.log(returnNeighboringNumbers(6));
 function getMathResult(a, b) {  
     let res = '';
     let str = [];
-    if ((typeof(b) != 'number') || (b <= 0)) {
+    if ((typeof(b) !== 'number') || (b <= 0)) {
         res = a;
     } else {
         for (let i = 1; i <= b; i++) {
@@ -29,7 +31,7 @@ function getMathResult(a, b) {
                 res = res + `${str[i-1]}---`;
             } else {
                 if (i == b) {
-                    res = res + `${str[i-1]}`; 
+                    res += `${str[i-1]}`;       
                 }
             } 
         }
